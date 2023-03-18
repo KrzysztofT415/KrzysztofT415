@@ -7,7 +7,7 @@ I'm Krzysiek Tałałaj 🙌, I am a fourth-year student of Algorithmic Computer 
 with specialization in Cryptography and Computer Security 🔒.
 <br />
 <br />
-I have made several repositories for uni assignments, if anything could help you accomplish yours exercises - feel free to copy paste, I don't mind. 😶‍🌫️
+I have made several repositories for uni assignments, if anything could help you accomplish your exercises<br /> - feel free to copy paste, I don't mind. 😶‍🌫️
 <br />
 <br />
 Be positive and stay healthy! 👾 👾 👾
