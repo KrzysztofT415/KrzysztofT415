@@ -2,15 +2,18 @@
 
 <img align="right" alt="GIF" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmEwODE4MmQ2OTE3M2VjOGRjMDVhNmIyMDI2NmM3OGI0M2VkYjVmYyZjdD1n/scZPhLqaVOM1qG4lT9/giphy.gif" style="width: 20vw"/>
 
-I'm Krzysiek Tałałaj 🙌, I am a fourth-year student of Algorithmic Computer Science 💻, 
+I'm Chris 🙌, I am a PhD student at Wroclaw University of Science and Technology 💻, 
 <br />
-with specialization in Cryptography and Computer Security 🔒.
-<br />
-<br />
-I have made several repositories for uni assignments, if anything could help you accomplish your exercises - feel free to copy paste, I don't mind. 😶‍🌫️
+with specialization in Algorithmic Computer Science, Cryptography and Computer Security 🔒.
 <br />
 <br />
-Be positive and stay healthy! 👾 👾 👾
+I have made several repositories for university assignments and few of my personal interests.
+<br />
+<br />
+It would make me happy if any of my work could help you accomplish your exercises. 😊
+<br />
+<br />
+Stay positive! 👾 👾 👾
 <br />
 <br />
 <a href="https://www.linkedin.com/in/krzysztoftalalaj/">
@@ -21,10 +24,8 @@ Be positive and stay healthy! 👾 👾 👾
 </a>
 <br />
 
-## My all-time favourite lines of code [01.02.21]:
-Were written almost 3 years ago, after around 8 months me being into CS ❤️.\
-It is called over class having set of polymorphic objects `ArrayList<T>` and filters it by casting onto filter class `searchedClass`.\
-That's where my love for programming begun.
+## My "all-time favourite" lines of code [01.02.21]:
+That's where my passion for programming have started.
 ```java
 public <T extends GameRule> ArrayList<T> getRulesOfType(Class<T> searchedClass) {
     ArrayList<T> rules = new ArrayList<>();
@@ -36,41 +37,4 @@ public <T extends GameRule> ArrayList<T> getRulesOfType(Class<T> searchedClass) 
     }
     return rules;
 }
-```
-
-## My recent lines of code [15.03.23]:
-I had to implement md5 algorithm in any language, so I did it in js 😁.\
-It uses pretty fun feature `Buffer`, which makes swapping little-endian to big-endian notation really easy.\
-You can just call `buffer.swap32()` 🥳.
-```javascript
-let hashArray = new Uint32Array(4)
-hashArray[0] = ivBuffer.readUInt32BE(0)
-hashArray[1] = ivBuffer.readUInt32BE(4)
-hashArray[2] = ivBuffer.readUInt32BE(8)
-hashArray[3] = ivBuffer.readUInt32BE(12)
-
-for (let j = 0; j < processedBuffer.length; j += 64) {
-    let W = new Uint32Array(hashArray)
-    // Just md5 stuff ahead
-    for (let i = 0; i < 64; i++) {
-        let [F, g] = [0, 0]
-       
-        // Rounds
-        if (i <= 15) [F, g] = [(W[1] & W[2]) | (~W[1] & W[3]), i]
-        else if (i <= 31) [F, g] = [(W[3] & W[1]) | (~W[3] & W[2]), (5 * i + 1) % 16]
-        else if (i <= 47) [F, g] = [W[1] ^ W[2] ^ W[3], (3 * i + 5) % 16]
-        else [F, g] = [W[2] ^ (W[1] | ~W[3]), (7 * i) % 16]
-        
-        F += W[0] + K[i] + processedBuffer.readUInt32LE(j + g * 4)
-        let rot = (F << s[i]) | (F >>> (32 - s[i]))
-        ;[W[0], W[1], W[2], W[3]] = [W[3], W[1] + rot, W[1], W[2]]
-    }
-    // Append to current hashState
-    hashArray[0] += W[0] //A
-    hashArray[1] += W[1] //B
-    hashArray[2] += W[2] //C
-    hashArray[3] += W[3] //D
-}
-
-return Buffer.from(hashArray.buffer).swap32().toString('hex') // Converting to BE notation.
 ```
