@@ -4,13 +4,15 @@
 
 I'm Chris 🙌, I am a PhD student at Wroclaw University of Science and Technology 💻, 
 <br />
-with specialization in Algorithmic Computer Science, Cryptography and Computer Security 🔒.
+I finished specialization of Cryptography and Computer Security 🔒 in the field of Algorithmic Computer Science.
+<br />
+My PhD is focused on Security of Machine Learning Training Processes. 🤖
 <br />
 <br />
 I have made several repositories for university assignments and few of my personal interests.
 <br />
 <br />
-It would make me happy if any of my work could help you accomplish your exercises. 😊
+I'm happy to share it with you and I'd be glad if any of my work will help you accomplish your exercises. But of course don't copy it blindly, make sure you understand them! 😊
 <br />
 <br />
 Stay positive! 👾 👾 👾
@@ -25,7 +27,7 @@ Stay positive! 👾 👾 👾
 <br />
 
 ## My "all-time favourite" lines of code [01.02.21]:
-That's where my passion for programming have started.
+That's where my passion for programming have started. 😎
 ```java
 public <T extends GameRule> ArrayList<T> getRulesOfType(Class<T> searchedClass) {
     ArrayList<T> rules = new ArrayList<>();
